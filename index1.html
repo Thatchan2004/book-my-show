@@ -4,11 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Booking Application</title>
-    <!-- Initialize Bootstrap  -->
+    <!-- Initialize Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <style>
+      /* Custom Styling */
+      body {
+        font-family: "Helvetica Neue", sans-serif;
+        background-color: #f5f5f5;
+      }
+      .navbar {
+        background-color: #2c2c2c !important;
+        border-bottom: 3px solid #f84464;
+      }
+      .navbar-brand {
+        font-weight: bold;
+        color: #f84464 !important;
+      }
+      .nav-link {
+        color: #fff !important;
+        transition: color 0.2s ease-in-out;
+      }
+      .nav-link:hover {
+        color: #f84464 !important;
+      }
+      .form-control {
+        border-radius: 30px;
+      }
+      .btn-outline-light {
+        border-radius: 30px;
+      }
+      footer {
+        background-color: #333 !important;
+        color: #fff;
+      }
+      footer a {
+        color: #f84464;
+        text-decoration: none;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
     <nav
@@ -74,13 +113,15 @@
         </div>
       </div>
     </nav>
+
+    <!-- Movie Cards Section -->
     <div class="container mt-4">
       <div id="movieCards" class="row">
         <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
           <div class="card" style="cursor: pointer">
             <img
               src="https://assets-in.bmscdn.com/iedb/movies/images/website/poster/large/vettaiyan-et00379391-1727938465.jpg"
-              alt=""
+              alt="Indian 2"
             />
             <div class="card-body">
               <h5 class="card-title">Indian 2</h5>
@@ -93,7 +134,7 @@
           <div class="card" style="cursor: pointer">
             <img
               src="https://assets-in.bmscdn.com/iedb/movies/images/website/poster/large/sattam-en-kayil-et00412489-1726743894.jpg"
-              alt=""
+              alt="Sattam"
             />
             <div class="card-body">
               <h5 class="card-title">Sattam</h5>
@@ -106,11 +147,11 @@
           <div class="card" style="cursor: pointer">
             <img
               src="https://assets-in.bmscdn.com/iedb/movies/images/website/poster/large/hitler-et00413125-1727093184.jpg"
-              alt=""
+              alt="Hitler"
             />
             <div class="card-body">
               <h5 class="card-title">Hitler</h5>
-              <p class="card-text">Action,Drama</p>
+              <p class="card-text">Action, Drama</p>
             </div>
           </div>
         </div>
@@ -119,11 +160,11 @@
           <div class="card" style="cursor: pointer">
             <img
               src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/joker-folie-a-deux-et00352820-1727168074.jpg"
-              alt=""
+              alt="Joker"
             />
             <div class="card-body">
               <h5 class="card-title">Joker</h5>
-              <p class="card-text">Drama,ACtion</p>
+              <p class="card-text">Drama, Action</p>
             </div>
           </div>
         </div>
@@ -132,7 +173,7 @@
           <div class="card" style="cursor: pointer">
             <img
               src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/the-greatest-of-all-time-et00401439-1725014428.jpg"
-              alt=""
+              alt="GOAT"
             />
             <div class="card-body">
               <h5 class="card-title">GOAT</h5>
@@ -145,7 +186,7 @@
           <div class="card" style="cursor: pointer">
             <img
               src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/vaazhai-et00408594-1724233930.jpg"
-              alt=""
+              alt="Vaazhai"
             />
             <div class="card-body">
               <h5 class="card-title">Vaazhai</h5>
@@ -158,7 +199,7 @@
           <div class="card" style="cursor: pointer">
             <img
               src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/meiyazhagan-et00405427-1721627107.jpg"
-              alt=""
+              alt="Meiyazhagan"
             />
             <div class="card-body">
               <h5 class="card-title">Meiyazhagan</h5>
@@ -171,7 +212,7 @@
           <div class="card" style="cursor: pointer">
             <img
               src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/bigil-et00105457-1667802781.jpg"
-              alt=""
+              alt="Bigil"
             />
             <div class="card-body">
               <h5 class="card-title">Bigil</h5>
@@ -181,73 +222,50 @@
         </div>
       </div>
     </div>
+
+    <!-- Footer Section -->
     <footer class="text-center text-lg-start bg-body-tertiary text-muted mt-4">
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        </section>
-
-        <!-- Section: Links -->
-        <section class="">
-            <div class="container text-center text-md-start mt-5">
-                <!-- Grid row -->
-                <div class="row mt-3">
-                    <!-- Grid column -->
-                    <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <!-- Content -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Book My Show
-                        </h6>
-                        <p>
-                            Your go-to platform for booking movie tickets, finding showtimes, and exploring the latest
-                            films.
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Popular Movies
-                        </h6>
-                        <p>
-                            <a href="#!" class="text-reset">Latest Releases</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Upcoming Movies</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Top Rated</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Now Showing</a>
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">Contact Us</h6>
-                        <p>123 Movie Lane, Cinema City, NY 10012, US</p>
-                        <p>
-                            support@bookmyshow.com
-                        </p>
-                        <p>+1 234 567 8900</p>
-                        <p>+1 234 567 8901</p>
-                    </div>
-                    <!-- Grid column -->
-                </div>
-                <!-- Grid row -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"></section>
+      <!-- Section: Links -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">bookMyshow</h6>
+              <p>Enjoy your favorite movies, plays, and events hassle-free.</p>
             </div>
-        </section>
-        <!-- Section: Links -->
+            <!-- Grid column -->
 
-        <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2024 Book My Show:
-            <a class="text-reset fw-bold" href="https://www.bookmyshow.com/">bookmyshow.com</a>
+            <!-- Links -->
+            <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Links</h6>
+              <p><a href="#!" class="text-reset">Movies</a></p>
+              <p><a href="#!" class="text-reset">Events</a></p>
+              <p><a href="#!" class="text-reset">Plays</a></p>
+              <p><a href="#!" class="text-reset">Sports</a></p>
+            </div>
+            <!-- Social Media -->
+            <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Follow Us</h6>
+              <a href="#!" class="me-4 link-secondary"><i class="fab fa-facebook"></i></a>
+              <a href="#!" class="me-4 link-secondary"><i class="fab fa-twitter"></i></a>
+              <a href="#!" class="me-4 link-secondary"><i class="fab fa-instagram"></i></a>
+              <a href="#!" class="me-4 link-secondary"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
         </div>
-        <!-- Copyright -->
+      </section>
+      <!-- Section: Links -->
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2024 BookMyShow
+      </div>
     </footer>
   </body>
 </html>
+
